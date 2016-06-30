@@ -1,0 +1,23 @@
+echo '
+
+[---] Instalación de PastRock [---]
+
+'
+
+apt-get update
+
+apt-get upgrade
+
+apt-get dis-upgrade
+
+apt-get clean
+
+apt-get autoclean
+
+apt-get install apache2
+
+apt-get install metasploit
+
+apt-get install python
+
+apt-get install python2
