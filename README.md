@@ -1,6 +1,6 @@
 # PasteRock
 
-PasteHacking Automatico :o
+Pastejacking Automatico :o
 
 # Creado por Andrés Montoya (SpyRock)
 
