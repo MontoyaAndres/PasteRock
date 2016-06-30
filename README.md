@@ -1,0 +1,2 @@
+# PasteRock
+PasteHacking Automatico :o
