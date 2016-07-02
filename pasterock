@@ -1,0 +1,3 @@
+cd /opt/PasteRock
+
+python PasteRock.py
