@@ -1,23 +1,27 @@
 echo '
 
-[---] Instalación de PastRock [---]
+[---] Instalación de PasteRock [---]
 
 '
 
-apt-get update
+sudo apt-get update
 
-apt-get upgrade
+sudo apt-get upgrade
 
-apt-get dis-upgrade
+sudo apt-get dis-upgrade
 
-apt-get clean
+sudo apt-get clean
 
-apt-get autoclean
+sudo apt-get autoclean
 
-apt-get install apache2
+sudo apt-get install apache2
 
-apt-get install metasploit
+sudo apt-get install python
 
-apt-get install python
+cp pasterock /usr/bin
 
-apt-get install python2
+chmod +x /usr/bin/pasterock
+
+cd ..
+
+mv PasteRock /opt
