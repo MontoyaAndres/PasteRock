@@ -8,7 +8,7 @@ from osx import osxinfect
 print chr(27)+"[3;36m"+"""
 [---]        		   PastRock                    [---]
 [---]        Created by: Andrés Montoya (SpyRock)      [---]
-[---]                    Version: 0.1                  [---]
+[---]                    Version: 0.2                  [---]
 [---]         		  SpyRock SEC         	       [---]
 [---]        Sigueme en Facebook: SpyRock SEC          [---]
 [---]        Google plus: Andrés Montoya               [---]    
@@ -24,7 +24,7 @@ print chr(27)+"[0;36m"+"[:)]apache esta corriendo!"
 
 print "[*]Limpiando..."
 
-os.system("rm meta_config index.html")
+os.system("rm index.html")
 
 plataforma=int(raw_input("""
 Eliga plataforma
