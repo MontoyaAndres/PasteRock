@@ -23,7 +23,7 @@ class install(bcolors):
 		if not os.geteuid() == 0:
 			sys.exit("""\033[1;91m\n[!] La instalación de PasteRock necesita permisos de root. ¯\_(ツ)_/¯\n\033[1;m""")
 		else:
-			os.system("cd .. && mv PasteRock /opt/")
+			os.system("cd .. && cd.. && mv PasteRock /opt/")
 			os.system("cp pasterock /usr/bin && chmod +x /usr/bin/pasterock")
 			
 			print bcolors.WARNING+"["+bcolors.FAIL+"♬"+bcolors.WARNING+"]"+bcolors.payload+"Comprobando si Metasploit Framework esta instalado...!\n"
