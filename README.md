@@ -10,17 +10,17 @@ en el actual solo es necesario seleccionar parte o un solo carácter para que el
 
 ![Alt text](http://oi64.tinypic.com/abnly.jpg "Screenshot")
 
-###Instalación
+##Instalación
 
 cd Install
 
 python install.py
 
-###Vídeo
+##Vídeo
 
-----
+sudnaosudn
 
-###Contacto
+##Contacto
 
 andresmontoyafcb@gmail.com
 
