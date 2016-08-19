@@ -1,7 +1,3 @@
-#-*- coding: utf-8 -*-
-#Autor: Andrés Montoya (SpyRock)
-#No me hago responsable del mal uso que este se le pueda dar.
-#!/usr/bin/python
 class bcolors:
     apache = '\033[95m'
     OKBLUE = '\033[94m'
