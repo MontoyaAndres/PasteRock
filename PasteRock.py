@@ -15,10 +15,14 @@ else:
 	os.system("clear")
 	print bcolors.BOLD+banners()
 	print bcolors.payload+"Visita "+bcolors.apache+"--->"+bcolors.payload+" http://spyrockos.aegae.com/"
-	print bcolors.payload+"Youtube " +bcolors.apache+"--->"+bcolors.payload+" https://www.youtube.com/channel/UCPTWhPfzYQWgJzdXcayu5Qg"
+	print bcolors.payload+"Youtube " +bcolors.apache+"--->"+bcolors.payload+" https://www.youtube.com/c/SpyRockLinux"
 	print bcolors.payload+"Facebook " +bcolors.apache+"--->"+bcolors.payload+" https://www.facebook.com/spyrockos/\n"
 	
 	print bcolors.WARNING+"["+bcolors.FAIL+"♬"+bcolors.WARNING+"]"+bcolors.payload+"Iniciando Apache2...!\n"
+	if os.path.exists("/usr/bin/pasterock"):
+		pass
+	else:
+		sys.exit(bcolors.FAIL+"["+bcolors.WARNING+"*"+bcolors.FAIL+"]"+bcolors.payload+"Por favor instale PasteRock!")
 	if os.path.exists("/var/www/html/"):
 		os.system("service apache2 start")
 	else:
