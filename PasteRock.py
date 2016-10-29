@@ -29,7 +29,8 @@ else:
 	else:
 		sys.exit(bcolors.FAIL+"["+bcolors.WARNING+"*"+bcolors.FAIL+"]"+bcolors.payload+"Por favor instale PasteRock!")
 	if os.path.exists("/opt/metasploit-framework"):
-		pass
+		if os.path.exists("/usr/share/metasploit-framework"):
+			pass
 	else:
 	    sys.exit(bcolors.FAIL+"["+bcolors.WARNING+"*"+bcolors.FAIL+"]"+bcolors.payload+"Por favor instale PasteRock!")
 		
