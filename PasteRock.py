@@ -17,7 +17,7 @@ else:
 	print bcolors.BOLD+banners()
 	print bcolors.payload+"Visita "+bcolors.apache+"--->"+bcolors.payload+" http://spyrockos.aegae.com/"
 	print bcolors.payload+"Youtube " +bcolors.apache+"--->"+bcolors.payload+" https://www.youtube.com/c/SpyRockLinux"
-	print bcolors.payload+"Facebook " +bcolors.apache+"--->"+bcolors.payload+" https://www.facebook.com/spyrockos/\n"
+	print bcolors.payload+"Twitter " +bcolors.apache+"--->"+bcolors.payload+" https://twitter.com/AndrsMontoya17\n"
 	
 	if os.path.exists("/usr/bin/pasterock"):
 		pass
