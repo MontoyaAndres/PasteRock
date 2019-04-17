@@ -1,6 +1,6 @@
 ## PasteRock
 
-###PasteJacking Automatico
+### PasteJacking Automatico
 
 Esta técnica consiste en detectar el copiado de cierta información 
 para ejecutar el script que lleva a cabo la modificación del contenido. 
@@ -24,4 +24,4 @@ https://youtu.be/KEeEa_iSVZs
 
 andresmontoyafcb@gmail.com
 
-https://twitter.com/AndrsMontoya17
+https://twitter.com/MontoyaAndres
